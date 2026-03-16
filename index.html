@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación - Mi Revelación</title>
+  <meta name="description" content="Invitación web para fiesta de revelación de género." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Chewy&family=Handlee&family=Parisienne&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header id="firstCover" class="hero section">
+    <div class="floating floating-left">oso</div>
+    <div class="floating floating-right">globito</div>
+
+    <p class="kicker">Te invitamos a nuestra</p>
+    <h1>Mi Revelación</h1>
+    <p class="subtitle">Una tarde para descubrir si será niña o niño</p>
+
+    <img src="portada1.png" alt="Portada de mi revelación" class="hero-cover" />
+    <img src="osito1.png" alt="" class="corner-bear" aria-hidden="true" />
+    <img src="osita2.png" alt="" class="corner-bear-top" aria-hidden="true" />
+    <div class="cover-title" aria-label="Mi Revelación">
+      <span class="cover-title-text">Mi Revelación</span>
+    </div>
+    <div class="balloons-layer" aria-hidden="true">
+      <span class="balloon" style="--x: 8%; --s: 44px; --dur: 10s; --delay: 0s; --c: #ff8fab;"></span>
+      <span class="balloon" style="--x: 20%; --s: 36px; --dur: 12s; --delay: 1.8s; --c: #7fc8f8;"></span>
+      <span class="balloon" style="--x: 31%; --s: 40px; --dur: 11s; --delay: 4.2s; --c: #ff8fab;"></span>
+      <span class="balloon" style="--x: 44%; --s: 34px; --dur: 9.5s; --delay: 2.1s; --c: #7fc8f8;"></span>
+      <span class="balloon" style="--x: 58%; --s: 42px; --dur: 12.5s; --delay: 0.9s; --c: #ff8fab;"></span>
+      <span class="balloon" style="--x: 70%; --s: 37px; --dur: 10.8s; --delay: 3.1s; --c: #7fc8f8;"></span>
+      <span class="balloon" style="--x: 82%; --s: 39px; --dur: 11.7s; --delay: 5s; --c: #ff8fab;"></span>
+      <span class="balloon" style="--x: 92%; --s: 33px; --dur: 9.8s; --delay: 2.8s; --c: #7fc8f8;"></span>
+    </div>
+    <div class="stars-layer" aria-hidden="true">
+      <span class="twinkle" style="--x: 7.5%; --y: 44%; --s: 11px; --d: 0s;"></span>
+      <span class="twinkle" style="--x: 14%; --y: 48%; --s: 9px; --d: 0.6s;"></span>
+      <span class="twinkle" style="--x: 29%; --y: 46.2%; --s: 8px; --d: 1.1s;"></span>
+
+      <span class="twinkle" style="--x: 56%; --y: 14%; --s: 10px; --d: 0.3s;"></span>
+      <span class="twinkle" style="--x: 61.8%; --y: 16%; --s: 8px; --d: 1.35s;"></span>
+      <span class="twinkle" style="--x: 66%; --y: 18%; --s: 9px; --d: 0.9s;"></span>
+      <span class="twinkle" style="--x: 73.5%; --y: 12.7%; --s: 7px; --d: 1.7s;"></span>
+      <span class="twinkle" style="--x: 77.8%; --y: 14.2%; --s: 7px; --d: 0.45s;"></span>
+      <span class="twinkle" style="--x: 84.8%; --y: 11%; --s: 7px; --d: 1.9s;"></span>
+      <span class="twinkle" style="--x: 90%; --y: 22%; --s: 12px; --d: 0.1s;"></span>
+      <span class="twinkle" style="--x: 87.2%; --y: 29%; --s: 8px; --d: 1.25s;"></span>
+
+      <span class="twinkle" style="--x: 83.8%; --y: 41.5%; --s: 9px; --d: 1.4s;"></span>
+      <span class="twinkle" style="--x: 86%; --y: 51.8%; --s: 9px; --d: 1.2s;"></span>
+      <span class="twinkle" style="--x: 31%; --y: 70%; --s: 8px; --d: 0.5s;"></span>
+      <span class="twinkle" style="--x: 3.8%; --y: 58%; --s: 9px; --d: 0.8s;"></span>
+    </div>
+
+    <svg class="envelope-arrow" viewBox="0 0 140 140" aria-hidden="true">
+      <path class="arrow-curve" d="M20 126 C 16 95, 28 70, 52 58 C 69 49, 71 66, 58 71 C 46 76, 40 62, 53 53 C 66 43, 84 33, 108 21" />
+      <path class="arrow-head" d="M97 18 L112 19 L104 31" />
+    </svg>
+
+    <div id="envelope" class="envelope" aria-live="polite">
+      <img src="sobre.png" alt="Abrir sobre" class="envelope-btn-img" />
+      <span class="sr-only">Abrir invitación</span>
+      <div class="letter">
+        <h2>Niña o Niño</h2>
+        <p>La gran sorpresa la descubrimos juntos el día del evento.</p>
+        <button id="revealHintBtn" class="btn-secondary" type="button">Ver pista</button>
+        <p id="hintText" class="hint" hidden>Tip: ven con el mejor ánimo y tu color favorito.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent" class="main-hidden second-cover">
+    <img src="portada2.png" alt="Portada 2" class="second-cover-image" />
+    <h2 class="second-cover-title"> <span class="title-girl">Niña</span> <span class="title-o">o</span> <span class="title-boy">Niño</span> </h2>
+    <p class="second-cover-desc">Un pedacito de cielo viene en camino. Con mucha alegría queremos invitarte a nuestra Revelación de Género. 👶✨</p>
+    <p class="second-cover-desc second-cover-desc2">Ven a compartir este momento tan especial y descubrir si nuestr@ amad@ bebé será niño o niña.</p>
+    <div class="info-cards">
+      <div class="info-card">
+        <span class="info-card-label">Fecha</span>
+        <span class="info-card-value">Sábado 27 de junio de 2026</span>
+      </div>
+      <div class="info-card">
+        <span class="info-card-label">Hora</span>
+        <span class="info-card-value">4:00 PM</span>
+      </div>
+      <div class="info-card">
+        <span class="info-card-label">Lugar</span>
+        <span class="info-card-value">Mi residencia</span>
+      </div>
+    </div>
+    <div class="team-gifts">
+      <div class="team-gift team-gift-girl">
+        <span class="team-gift-label">Team Niña</span>
+        <span class="team-gift-item">Toallitas húmedas</span>
+      </div>
+      <div class="team-gift team-gift-boy">
+        <span class="team-gift-label">Team Niño</span>
+        <span class="team-gift-item">Pañales</span>
+      </div>
+    </div>
+    <video class="second-cover-video" autoplay muted loop playsinline>
+      <source src="video1.mp4" type="video/mp4" />
+    </video>
+    <button id="backToMainBtn" class="second-back-btn" type="button" aria-label="Regresar a portada principal">↩</button>
+    <button id="toThirdCoverBtn" class="second-next-btn" type="button">Siguiente</button>
+  </main>
+
+  <div class="third-cover main-hidden">
+    <img src="portada3.png" alt="Portada 3" class="third-cover-image" />
+    <div class="third-balloons-left" aria-hidden="true">
+      <span class="t-balloon" style="--x:6%;  --s:38px; --dur:9s;  --delay:0s;   --c:#7fc8f8;"></span>
+      <span class="t-balloon" style="--x:14%; --s:30px; --dur:11s; --delay:1.4s; --c:#7fc8f8;"></span>
+      <span class="t-balloon" style="--x:22%; --s:34px; --dur:10s; --delay:2.8s; --c:#7fc8f8;"></span>
+    </div>
+    <div class="third-balloons-right" aria-hidden="true">
+      <span class="t-balloon" style="--x:72%; --s:36px; --dur:10s; --delay:0.5s; --c:#ff8fab;"></span>
+      <span class="t-balloon" style="--x:82%; --s:32px; --dur:12s; --delay:1.9s; --c:#ff8fab;"></span>
+      <span class="t-balloon" style="--x:91%; --s:38px; --dur:9.5s;--delay:3.2s; --c:#ff8fab;"></span>
+    </div>
+    <button id="backToSecondBtn" class="third-back-btn" type="button" aria-label="Regresar a portada 2">↩</button>
+    <h2 class="third-cover-title">Confirma tu<br>asistencia</h2>
+    <p class="third-cover-dress">👗 Código de vestimenta: todo blanco 👔</p>
+    <div class="confirm-btns">
+      <a id="momLink" class="confirm-card" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="logo1.jpg" alt="" class="confirm-logo" />
+        <span>Confirma con mamá</span>
+      </a>
+      <a id="dadLink" class="confirm-card" href="#" target="_blank" rel="noopener noreferrer">
+        <img src="logo1.jpg" alt="" class="confirm-logo" />
+        <span>Confirma con papá</span>
+      </a>
+    </div>
+    <video class="third-cover-video" autoplay muted loop playsinline>
+      <source src="video2.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
