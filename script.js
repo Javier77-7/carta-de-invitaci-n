@@ -1,8 +1,8 @@
 const EVENT_CONFIG = {
   // Usa formato ISO: año-mes-díaThh:mm:ss
-  eventDateISO: "2026-06-27T16:00:00",
-  eventDateText: "Sábado 27 de junio de 2026",
-  eventTimeText: "4:00 PM",
+  eventDateISO: "2026-07-27T18:00:00",
+  eventDateText: "julio de 2026",
+  eventTimeText: "6:00 PM",
   eventPlaceText: "Mi residencia",
   momPhone: "573215028587",
   dadPhone: "573043731090"
@@ -163,3 +163,5 @@ updateCountdown();
 if (daysEl && hoursEl && minutesEl && secondsEl) {
   setInterval(updateCountdown, 1000);
 }
+
+/* Chroma key processing removed */
