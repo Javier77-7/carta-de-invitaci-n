@@ -620,6 +620,51 @@ h1 {
   color: transparent;
 }
 
+.gift-choice {
+  position: absolute;
+  left: 50%;
+  top: 78.5%;
+  transform: translateX(-50%);
+  z-index: 8;
+  display: grid;
+  gap: 6px;
+  width: fit-content;
+  text-align: center;
+}
+
+.gift-choice-item {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Handlee", cursive;
+  font-weight: 700;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  letter-spacing: 0.2px;
+  color: #7a5138;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.55);
+}
+
+.gift-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9f7354;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  color: transparent;
+}
+
+.gift-choice-item.checked .gift-box {
+  background: linear-gradient(145deg, #f5e6d4, #ecd2b8);
+  color: #7a4b2f;
+}
+
 .second-cover-bear {
   position: absolute;
   left: 50%;
@@ -1063,7 +1108,8 @@ h1 {
 .second-cover.main-visible .second-cover-subtitle,
 .second-cover.main-visible .second-cover-desc,
 .second-cover.main-visible .second-cover-message,
-.second-cover.main-visible .second-cover-desc2 {
+.second-cover.main-visible .second-cover-desc2,
+.second-cover.main-visible .gift-choice {
   animation: secondTextIn 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
@@ -1082,7 +1128,8 @@ h1 {
 .second-cover.main-hidden .second-cover-subtitle,
 .second-cover.main-hidden .second-cover-desc,
 .second-cover.main-hidden .second-cover-message,
-.second-cover.main-hidden .second-cover-desc2 {
+.second-cover.main-hidden .second-cover-desc2,
+.second-cover.main-hidden .gift-choice {
   animation: secondTextOut 0.23s ease both;
 }
 
@@ -1363,6 +1410,7 @@ h1 {
   /* Adjust second page spacing on mobile */
   .second-cover-title { top: 42%; font-size: clamp(2.1rem, 8vw, 3rem); }
   .info-cards { top: 48%; }
+  .gift-choice { top: 79%; }
   /* Móvil: ajustar posición del osito central (osito 5) — subido 15% desde 29% -> 14% */
   .second-cover-bear { top: 14%; }
 }

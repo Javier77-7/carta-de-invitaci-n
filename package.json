@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx http-server . -p 3000"
+    "dev": "npx http-server . -p 3001 -c-1"
   }
 }

@@ -1,9 +1,9 @@
 const EVENT_CONFIG = {
   // Usa formato ISO: año-mes-díaThh:mm:ss
-  eventDateISO: "2026-07-27T18:00:00",
-  eventDateText: "julio de 2026",
+  eventDateISO: "2026-08-01T18:00:00",
+  eventDateText: "1 de agosto",
   eventTimeText: "6:00 PM",
-  eventPlaceText: "Mi residencia",
+  eventPlaceText: "Residencia de papá",
   momPhone: "573215028587",
   dadPhone: "573043731090"
 };
@@ -38,7 +38,7 @@ function fillEventText() {
   if (eventTimeTextEl) eventTimeTextEl.textContent = EVENT_CONFIG.eventTimeText;
   if (eventPlaceTextEl) eventPlaceTextEl.textContent = EVENT_CONFIG.eventPlaceText;
 
-  const baseMessage = "¡Sí voy a tu revelación! 🎉";
+  const baseMessage = "si voy a ir a tu baby shower";
   if (momLink) momLink.href = buildWhatsAppLink(EVENT_CONFIG.momPhone, baseMessage);
   if (dadLink) dadLink.href = buildWhatsAppLink(EVENT_CONFIG.dadPhone, baseMessage);
 }
